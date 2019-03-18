@@ -1,0 +1,4 @@
+---
+# defaults file for satellite_tasks_cleanup
+verbose: true
+days: 30
