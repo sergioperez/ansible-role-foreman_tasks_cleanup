@@ -26,7 +26,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: satellite
       roles:
-         - { role: satellite_tasks_cleanup , x: 42 }
+         - { role: satellite_tasks_cleanup , days: 30 }
 
 License
 -------
