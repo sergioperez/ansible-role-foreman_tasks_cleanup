@@ -1,9 +1,5 @@
 ---
 # tasks file for satellite-tasks-cleanup
-- name: Polla
-  debug:
-    msg: "{{ ansible_check_mode }}"
-
 - name: "[Check mode] clean tasks older than {{ days }}d"
   shell: "foreman-rake foreman_tasks:cleanup TASK_SEARCH='label ~ *' AFTER={{ days }}d VERBOSE={{ verbose }} NOOP=true"
   when: ansible_check_mode
